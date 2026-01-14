@@ -1,0 +1,289 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{tikz}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{}{\LARGE Aasim Ali Khan}}\\ \vspace{10pt}
+%   \vspa
+  \small \raisebox{-0.1\height}\faPhone\ 9121795607 ~ \href{mailto:190010001@iitdh.ac.in}{\raisebox{-0.2\height}\faEnvelope\  \underline{aasimalikhan01@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/aasim-ali-khan-0b1554195//}{\raisebox{-0.2\height}\faLinkedin\ \underline{\href{https://www.linkedin.com/in/aasim-ali-khan-0b1554195/}{\textbf{Linkedin\ExternalLink}}}}  ~
+    % \href{https://github.com/aasimalikhan}
+    {\raisebox{-0.2\height}\faGithub\ \underline{\href{https://github.com/aasimalikhan/}{\textbf{Github\ExternalLink}}}}
+    \vspace{-8pt}
+\end{tabular*}
+
+\vspace{-2mm}
+%-----------EDUCATION-----------
+\section{Education}
+\normalsize{
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology Dharwad}{August 2019 -- May 2023}
+      {Bachelor of Technology in Computer Science.}{Dharwad, Karnataka}
+  \resumeSubHeadingListEnd
+  }
+  
+
+% \vspace{-3pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \footnotesize{\item{
+     \textbf{Languages}{: Java, C/C++, HTML, CSS, Javascript, SQL} \\  
+     \vspace{1pt}
+    %  \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
+     \textbf{Technologies/Frameworks}{: Spring Boot, ASP.NET, ReactJS, Redux, Recoil, CSS, NodeJS, MongoDB, Mongoose, PostgreSQL} \\
+     \textbf{Tools}{: Git, GitHub, VSCode, Visual Studio, IntelliJ IDEA} \\
+     \textbf{Familiar}{: Kubernetes, Docker, Apache Kafka, Redis, Github Actions} \\
+     
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+\section{Experience}
+  \vspace{1pt}
+    \resumeSubHeadingListStart
+    % New entry for Fiserv
+
+    \resumeSubheading
+      {Software Engineer 2}{April 2025 -- Present}
+      {Verizon}{Hyderabad, Telangana}
+\vspace{-2pt}
+\resumeItemListStart
+\footnotesize{
+
+\resumeItem{Engineered a centralized event-driven \textbf{Slack Notification Platform} (Spring Boot, RabbitMQ, MySQL) adopted by 25+ internal apps to deliver high-volume, templated notifications with guaranteed delivery, retries, DLQs, and auditing.}
+
+\resumeItem{Designed publisher–consumer–retry microservices with exponential backoff and non-blocking scheduled retries, improving end-to-end delivery reliability from 72\% to \textbf{99.3\%}.}
+
+\resumeItem{Developed a high-performance \textbf{IP Inventory Auditor} (Node.js, async ping/DNS, Excel automation) reducing network validation workload from 3–5 days to \textbf{40 seconds} and identifying undocumented assets across Verizon's infrastructure.}
+
+\resumeItem{Migrated multiple services from MS SQL Server to MySQL, standardized connection pooling (C3P0 → HikariCP), and integrated \textbf{MySQL Router}.}
+
+\resumeItem{Built an auto-recovery monitoring script for MySQL Router using Task Scheduler to restore router failures and restart dependent services.}
+
+\resumeItem{Developed and optimized backend features for \textbf{Distribution List Management} (LDAP/Active Directory), improving lookup performance and stability across global email systems.}
+
+
+\resumeItemListEnd
+
+    \resumeSubheading
+      {Technical Analyst (SDE) }{July 2023 -- March 2025}
+      {Fiserv (Fiserv India Ltd.)}{Bengaluru, Karnataka}
+\vspace{-2pt}
+\resumeItemListStart
+   \footnotesize{
+    \resumeItem{Contributed to \textbf{Architect}, a customizable online banking framework powering 1800+ banks; improved reliability, compliance, and multi-tenant scalability.}
+
+
+\resumeItem{Implemented FDIC-compliance UI components using React/Recoil, enabling dynamic and regulation-driven account protection visibility for end-users.}
+
+\resumeItem{Developed and optimized 15+ RESTful APIs in Spring Boot for account, transaction, and user workflows, improving backend performance by \textbf{20\%}.}
+
+\resumeItem{Converted SOAP-based integrations to REST, reducing service latency by \textbf{25\%} and improving interoperability with downstream banking systems.}
+
+\resumeItem{Delivered multiple production defect resolutions and hotfixes, reducing client-reported issues by \textbf{20\%} and maintaining a 95\% resolution rate for P1/P2 incidents.}
+
+        \resumeItemListEnd
+        }
+        
+    \resumeSubHeadingListEnd
+    % Existing entry
+    \resumeSubheading
+      {SDE Intern}{May 2022 -- June 2022}
+      {Optum  (Optum Global Solutions, UHG)}{Hyderabad, Telangana}
+      \vspace{-2pt}
+    %   {\textbf{Centralized Exclusion API}}
+       \resumeItemListStart
+          \footnotesize{
+            \resumeItem{Developed and deployed 10+ RESTful API endpoints to validate insurance claims based on exclusion filters, increasing claim validation accuracy by \textbf{25\%}.}
+            \vspace{-1.5mm}
+            \resumeItem{Applied advanced business rule exclusions post-document verification to determine claim validity, reducing erroneous claims by \textbf{15\%} and expediting processing timelines by \textbf{10\%.}
+            \vspace{-1.5mm}
+            \resumeItem{Authored comprehensive technical documentation, including API usage guidelines and business logic flowcharts.}
+            \\
+            \vspace{1.5mm}
+        \resumeItemListEnd
+        }
+    
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\underline{\href{https://project-focus-9iky.onrender.com/}{\textbf{Project Focus \ExternalLink}}} $|$ \emph{ReactJS, NodeJS, OAuth, HTML, CSS}}
+            
+         
+          \resumeItemListStart
+            \vspace{2mm}
+            \footnotesize{
+              \resumeItem{Built a full-stack web app using the MERN stack to enhance productivity using intime tracking}
+              \resumeItem{Implemented daily and monthly statistics tracking for user activity.}
+              \resumeItem{Developed a full-stack application using ReactJS (frontend), NodeJS (backend), and MongoDB (database).}
+              \resumeItem{Integrated user authentication and registration with \textbf{NodeMailer}.}
+            }
+            \resumeItemListEnd
+            \vspace{-15pt}
+
+    
+      
+         
+
+    
+
+\vspace{-3mm}
+    
+
+
+%
+
+
+
+
+\end{document}
+
